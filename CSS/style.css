@@ -1,0 +1,180 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #2E0249;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contact {
+    padding: 64px 64px 64px 44px;
+    
+    display: flex;
+    gap: 161px;
+}
+
+
+/* CONTACT-DATA */
+.contact-data h1 {
+    font-size: 48px;
+    color: #EEEEEE;
+    -webkit-text-stroke: 1px #000000;
+}
+
+.contact-data h1 span {
+    color: #A91079;
+}
+
+/* Data User */
+.data-user-list {
+    margin: 91px 0 263px 0;
+    
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.data-user-item {
+    padding: 24px;
+    
+    font-size: 20px;
+    color: #FFFFFF;
+    
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.tel {
+    background: rgba(87, 10, 87, 0.5);
+    border: 3px solid #A91079;
+    border-radius: 16px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 44px;
+}
+
+.social-links img {
+    padding: 20px;
+}
+
+.social-links img:hover {
+    padding: 20px;
+    
+    background: #A91079;
+    border-radius: 50%;
+}
+
+
+/* CONTACT-FORM */
+.contact-form {
+    padding: 48px;
+    
+    background-color: #eeeeee;
+    border-radius: 24px;
+}
+
+.contact-form h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2E0249;
+}
+
+/* Form interests */
+.form-interests {
+    margin: 24px 0 64px 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.form-interests label {
+    padding: 16px;
+    
+    font-size: 20px;
+    color: #2E0249;
+ 
+    border: 2px solid #2e02494d;
+    border-radius: 8px;
+    opacity: 30%;   
+}
+
+.form-interests input:checked+label {
+    color: #eeeeee;
+    
+    background-color: #A91079;
+    border: none;
+    opacity: 100%;
+}
+
+/* Disappear With Checkbox */
+.form-interests input {
+    width: 0px;
+    visibility: hidden;
+}
+
+/* form message*/
+.form-message {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+/* form message field */
+.form-message-field input[type="text"] {
+    width: 100%;
+    padding-bottom: 8px;
+    
+    font-size: 20px;
+    
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #2e02494d;
+}
+
+.form-message input:focus {
+    outline: none;
+    
+    color: #2E0249;
+    
+    border-bottom: 3px solid #A91079;
+}
+
+/* BUTTON */
+.form-button {
+    margin-top: 230px;
+    padding: 24px 64px;
+    
+    font-size: 20px;
+    color: #eeeeee;
+    
+    background-color: #A91079;
+    border-radius: 16px;
+    
+    display: flex;
+    gap: 16px;
+}
+
+.form-button:hover {
+    background-color: rgba(169, 16, 121, 0.8);
+}
+
+/* Disabled Button */
+.form-button:disabled {
+    cursor: default;
+    opacity: .4;
+}
