@@ -76,3 +76,35 @@ checkboxes.forEach((checkbox) => {
         button.disabled = !checkInputs(inputs) || !checkCheckbox(checkboxes);
     });
 });
+
+// SAVE TO LOCALSTORAGE
+
+// Input
+form.addEventListener('submit', () => {
+    const data = {
+        name: nameInput.value,
+        email: emailInput.value,
+        message: messageInput.value
+    };
+  
+    localStorage.setItem('userData', JSON.stringify(data));
+    
+  });
+
+//   Checkbox
+
+function saveSelectedInterests() {
+    const selectedInterests = [];
+  
+    checkboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        selectedInterests.push(checkbox.id);
+      }
+    });
+  
+    localStorage.setItem('selectedInterests', JSON.stringify(selectedInterests));
+  }
+  
+  form.addEventListener('submit', () => {
+    saveSelectedInterests();
+  });
