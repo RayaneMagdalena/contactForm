@@ -1,0 +1,52 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+html {
+    font-size: 14px;
+}
+
+body {
+    height: 100vh;
+    background-color: #2E0249;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin: 2rem;
+   
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #EEEEEE;
+    -webkit-text-stroke: 0.07rem #000000;
+   
+    text-align: center;
+}
+
+.user-report {
+    width: 50vw;
+    height: 70vh;
+    margin: auto;
+    padding: 2.5rem;
+
+    background-color: #eeeeee;
+    border: 3px solid #A91079;
+    border-radius: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user-item {
+    color: #47096d;
+    font-size: 1rem;
+}
+
+.user-item p {
+    font-size: 1.5rem;
+}

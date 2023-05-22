@@ -28,7 +28,8 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    form.submit();
+    window.location.href = "userReport.html";
+
 });
 
 // Checks if the name is valid
