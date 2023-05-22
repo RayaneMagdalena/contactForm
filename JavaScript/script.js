@@ -86,25 +86,25 @@ form.addEventListener('submit', () => {
         email: emailInput.value,
         message: messageInput.value
     };
-  
+
     localStorage.setItem('userData', JSON.stringify(data));
-    
-  });
+
+});
 
 //   Checkbox
 
 function saveSelectedInterests() {
     const selectedInterests = [];
-  
+
     checkboxes.forEach((checkbox) => {
-      if (checkbox.checked) {
-        selectedInterests.push(checkbox.id);
-      }
+        if (checkbox.checked) {
+            selectedInterests.push(checkbox.id);
+        }
     });
-  
+
     localStorage.setItem('selectedInterests', JSON.stringify(selectedInterests));
-  }
-  
-  form.addEventListener('submit', () => {
+}
+
+form.addEventListener('submit', () => {
     saveSelectedInterests();
-  });
+});

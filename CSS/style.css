@@ -6,116 +6,144 @@
 }
 
 /* Body Styles */
-body {
-    background-color: #2E0249;
-    font-family: 'Poppins', sans-serif;
+html {
+    font-size: 14px;
 }
 
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2E0249;
+}
 
 .contact {
-    padding: 64px 64px 64px 44px;
-    
-    display: flex;
-    gap: 161px;
-}
+    height: 100%;
 
+    padding: 4rem 4rem 4rem 4rem;
+
+    font-size: 1.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
 
 /* CONTACT-DATA */
-.contact-data h1 {
-    font-size: 48px;
-    color: #EEEEEE;
-    -webkit-text-stroke: 1px #000000;
+
+/* Data User */
+
+.data-user {
+    width: 28.1rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.contact-data h1 span {
+.data-user h1 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #EEEEEE;
+    -webkit-text-stroke: 0.07rem #000000;
+}
+
+.data-user h1 span {
     color: #A91079;
 }
 
-/* Data User */
 .data-user-list {
-    margin: 91px 0 263px 0;
-    
     list-style-type: none;
-    
+
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: .5rem;
 }
 
 .data-user-item {
-    padding: 24px;
-    
-    font-size: 20px;
+    padding: 1rem;
+
+
     color: #FFFFFF;
-    
+
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 1rem;
 }
 
-.tel {
+.data-user-item:hover {
     background: rgba(87, 10, 87, 0.5);
-    border: 3px solid #A91079;
-    border-radius: 16px;
+    border: 0.18rem solid #A91079;
+    border-radius: 1rem;
 }
 
 /* Social Links */
 .social-links {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 44px;
+    gap: 2.7rem;
 }
 
 .social-links img {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .social-links img:hover {
-    padding: 20px;
-    
     background: #A91079;
     border-radius: 50%;
 }
 
-
 /* CONTACT-FORM */
 .contact-form {
-    padding: 48px;
-    
+    width: 43.7rem;
+    height: 100%;
+    padding: 2.5rem;
+
     background-color: #eeeeee;
-    border-radius: 24px;
+    border-radius: 1.5rem;
 }
 
-.contact-form h2 {
-    font-size: 20px;
+.form {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-interests-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-interests-message h2 {
+    font-size: 1.25rem;
     font-weight: 500;
     color: #2E0249;
 }
 
 /* Form interests */
 .form-interests {
-    margin: 24px 0 64px 0;
-    
+    margin: .8rem 0 1.2rem 0;
+
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 0.3rem;
 }
 
 .form-interests label {
-    padding: 16px;
-    
-    font-size: 20px;
+    padding: 1rem;
+
     color: #2E0249;
- 
-    border: 2px solid #2e02494d;
-    border-radius: 8px;
-    opacity: 30%;   
+
+    border: 0.12rem solid #2e02494d;
+    border-radius: 0.5rem;
+    opacity: 30%;
 }
 
 .form-interests input:checked+label {
     color: #eeeeee;
-    
+
     background-color: #A91079;
     border: none;
     opacity: 100%;
@@ -131,46 +159,50 @@ body {
 .form-message {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 2rem;
 }
 
 /* form message field */
 .form-message-field input[type="text"] {
     width: 100%;
-    padding-bottom: 8px;
-    
-    font-size: 20px;
-    
+    padding-bottom: 0.5rem;
+
+    font-size: 1.25rem;
+    color: #2E0249;
+
     background-color: transparent;
     border: none;
-    border-bottom: 3px solid #2e02494d;
+    border-bottom: 0.18rem solid #2e02494d;
 }
 
 .form-message input:focus {
     outline: none;
-    
+
     color: #2E0249;
-    
-    border-bottom: 3px solid #A91079;
+
+    border-bottom: 0.18rem solid #A91079;
 }
 
 /* BUTTON */
 .form-button {
-    margin-top: 230px;
-    padding: 24px 64px;
-    
-    font-size: 20px;
+    width: 19rem;
+    padding: 1rem 2rem;
+
+    font-size: 1.25rem;
     color: #eeeeee;
-    
+
     background-color: #A91079;
-    border-radius: 16px;
-    
+    border-radius: 1rem;
+
     display: flex;
-    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .form-button:hover {
     background-color: rgba(169, 16, 121, 0.8);
+    cursor: pointer;
 }
 
 /* Disabled Button */
