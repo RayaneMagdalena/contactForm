@@ -1,0 +1,103 @@
+@media (max-width: 1175px) {
+    html {
+        font-size: 13px;
+    }
+
+    .contact {
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 1040px) {
+    html {
+        font-size: 12px;
+    }
+
+    .data-user {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 890px) {
+    .data-user h1 {
+        font-size: 2.6rem;
+        line-height: 3.5rem;
+    }
+
+    .data-user {
+        width: 19rem;
+    }
+}
+
+@media (max-width: 790px) {
+    .body {
+        height: auto;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact-data {
+        display: flex;
+    }
+
+    .contact-data h1 {
+        font-size: 2.6rem;
+        line-height: 3.5rem;
+    }
+
+    .data-user {
+        width: 80vh;
+        text-align: center;
+    }
+
+    .data-user-list {
+        display: none;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-links img {
+        width: 3.5rem;
+        height: 4rem;
+    }
+
+    .contact-form {
+        width: 85vw;
+    }
+
+    .form {
+        gap: 4rem;
+    }
+
+    .form-interests {
+        margin: .8rem 0 2.5rem 0;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .form {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .contact-data h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .contact-form {
+        width: 80vw;
+    }
+}
